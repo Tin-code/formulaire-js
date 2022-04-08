@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap');
+:root{
+    --green: #719bda7c;
+    --black: #192a56;
+    --color-light: #666;
+    --box-shadow: 4.2rem 2rem 10px rgba(0,0,0,.1);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--green) ;
+}
+label{
+    color: #fff;
+    margin-bottom: 15px;
+}
+legend{
+    border: 1px solid;
+    padding: 10px;
+    color: #fff;
+    background-color: var(--black);
+    text-align: center;
+}
+form{
+    padding: 7px;
+    box-shadow: var(--box-shadow);
+}
+p{
+    color: #fff;
+}
+
+.text, .radio{
+    margin: 10px;
+}
+.text input, textarea{
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 9px;
+    
+}
+.visible{
+    visibility: hidden;
+}
+textarea{
+    resize: none;
+}
+input{
+    border: 1px solid #192a56;
+    outline: none;
+}
+.submit{
+    margin: 10px;
+}
+.submit-btn{
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #192a56;
+    width: 100%;
+    background-color: var(--black);
+    color: #fff;
+    font-size: 17px;
+}
+
+
+.submit-btn:disabled{
+    background-color: rgba(194, 194, 194, 0.589);
+    color: var(--color-light);
+}
+
+#formDiv{
+    background-color: rgba(5, 40, 80, 0.884);
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    border-radius: 10px;
+}
+
+.invalid{
+    border: 1px solid red;
+}
+
+.errorMsg{
+    font-size: .8em;
+    color: rgb(88, 1, 1);
+    margin-left: 60px;
+    float: inline-end;
+}
+
+.okay{
+    border: 1px solid green;
+}
+textarea{
+display:none;}

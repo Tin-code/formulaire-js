@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>  Formulaire</title>
+</head>
+
+<body>
+
+    <form action="validation.html" id="myForm" novalidate>
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <div class="text">
+                <label for="name">Votre nom:</label>
+                <input type="text" name="name" id="name" placeholder="Entrez votre nom s'il vous plait !" minlength="2" >
+            </div>
+            <div class="text">
+                <label for="prenom">Votre Prénom:</label>
+                <input type="text" name="fName" id="fName" placeholder="Entrez votre prénom s'il vous plait !"
+                    minlength="2" required>
+                    
+            </div>
+            <div class="text">
+                <label for="birthday">Date de naissance :</label>
+                <input type="date" name="birthday" placeholder="10-09-2021" min="01-01-1960" max="31-12-2090" id="birthday" required>
+            </div>
+            <div class="text">
+                <label for="tel">Votre numéro de téléphone</label>
+                <input type="tel" id="tel" placeholder="Entrez votre numéro de téléphone s'il vous plait !"
+                    maxlength="10" required>                   
+            </div>
+            <div class="radio">
+                Quel est votre genre ? :
+                <label for="genderM"><input type="radio" name="gender" id="genderM" required> Homme </label>
+                <label for="genderF"> <input type="radio" name="gender" id="genderF"> Femme </label>
+            </div>
+            <div class="radio">
+                Avez vous un handicap ? :
+                <label for="hand"><input type="radio" name="hand" id="hand" > Oui</label>
+
+                <label for="noHand"><input type="radio" name="hand" id="noHand" required> Non </label>
+
+            </div>
+            <div class="text visible">
+                <label for="description">Si oui precisez votre handicap</label>
+                <textarea name="description" id="description" ></textarea>
+            </div>
+            <div class="submit">
+                <button class="submit-btn" dis>ENVOYER</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
